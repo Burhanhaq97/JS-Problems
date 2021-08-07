@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Write a JavaScript program to find the area of a triangle where lengths of
+      the three of its sides are 5, 6, 7.
+    </p>
+
+    <script>
+      let side_one = 5,
+        side_two = 6,
+        side_three = 7;
+
+      // s = semi_perimeter
+
+      let s = (side_one + side_two + side_three) / 2;
+
+      let Area = Math.sqrt(
+        s * ((s - side_one) * (s - side_two) * (s - side_three))
+      );
+      console.log(Area_Triangle);
+      document.write(`<h1> the area of triangle is : ${Area} <h1/>`);
+    </script>
+  </body>
+</html>
